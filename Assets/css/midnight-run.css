@@ -1,0 +1,127 @@
+/* Midnight Run theme for Codaglot 1.0.0 */
+code[class*="language-"],
+pre[class*="language-"] {
+    color: var(--bs-body-color);
+    background: none;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    font-family: var(--bs-font-monospace, Menlo, Courier New, monospace);
+    font-size: var(--code-block-font-size, 1rem);
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    tab-size: 2;
+    hyphens: none;
+}
+
+pre[class*="language-"] {
+    border-radius: 10px;
+    margin: 1rem 0 !important;
+    overflow: auto;
+    padding: 1rem 0.75rem;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+    background: var(--cglot-code-bg);
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+    padding: .1em;
+    border-radius: .3em;
+    white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: var(--cglot-code-comment);
+}
+
+.token.punctuation {
+    color: var(--bs-body-color);
+}
+
+.namespace {
+    opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: var(--cglot-code-literal);
+}
+
+.token.boolean,
+.token.number {
+    color: var(--cglot-code-literal);
+}
+
+.token.string {
+    color: var(--cglot-code-literal);
+}
+
+.token.selector,
+.token.attr-name,
+.token.char,
+.token.inserted {
+    color: var(--cglot-code-literal);
+}
+
+.token.builtin {
+    color: var(--cglot-code-literal);
+}
+
+.token.interpolation {
+    color: var(--bs-body-color);
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+    color: var(--bs-body-color);
+}
+
+.token.atrule,
+.token.attr-value {
+    color: var(--cglot-code-literal);
+}
+
+.token.class-name {
+    color: var(--bs-body-color);
+}
+
+.token.function {
+    color: var(--bs-body-color);
+}
+
+.token.keyword {
+    color: var(--cglot-code-keyword);
+    font-weight: bold;
+}
+
+.token.regex,
+.token.important {
+    color: var(--cglot-code-literal);
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
